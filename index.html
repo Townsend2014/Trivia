@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<script src="trivia.js"></script>
+
+</head>
+<body>
+
+<form name="myForm">
+<input id="start" type="button" value="START" onclick="init()"/>
+<p id="tid"></p>
+</form>
+
+<h1 id="h1">Random World Quiz</h1>
+
+<form id="quiz" name="quiz">
+
+<p>Who were the first Europeans to reach South Africa?</p>
+<input type="radio" id="mc" name="q1" value="Denmark"> Denmark<br>
+<input type="radio" id="mc" name="q1" value="Austria"> Austria<br>
+<input type="radio" id="mc" name="q1" value="Portuguese"> Portuguese<br>
+<input type="radio" id="mc" name="q1" value="Belgium"> Belgium<br>
+
+<p>Which ethnic group of non-German origin are the largest in Germany? </p>
+<input type="radio" id="mc" name="q2" value="Turkish"> Turkish<br>
+<input type="radio" id="mc" name="q2" value="Poles"> Poles<br>
+<input type="radio" id="mc" name="q2" value="Italians"> Italians<br>
+<input type="radio" id="mc" name="q2" value="Russians"> Russians<br>
+
+<p>What is the most ordered food in America?</p>
+<input type="radio" id="mc" name="q3" value="Hot Dogs"> Hot Dogs<br>
+<input type="radio" id="mc" name="q3" value="Hamburgers"> Hamburgers<br>
+<input type="radio" id="mc" name="q3" value="Pizza"> Pizza<br>
+<input type="radio" id="mc" name="q3" value="Chicken Wings"> Chicken Wings<br>
+
+<p>Which country has won the most gold medal in table tennis?</p></li>
+<input type="radio" id="mc" name="q4" value="Russia"> Russia<br>
+<input type="radio" id="mc" name="q4" value="China"> China<br>
+<input type="radio" id="mc" name="q4" value="Thailand" > Thailand<br>
+<input type="radio" id="mc" name="q4" value="United States" > United States<br><br>
+
+<input id="button" type="button" value="My Answers" onclick="check();">
+
+</form>
+
+<div id= "aftersubmit">
+<p id="numbercorrect">Correct Answers</p>
+<p id="numberwrong">Correct Answers</p>	
+<p id="unanswered">Unanswered</p>
+
+</div>
+
+</body> 
+</html>
